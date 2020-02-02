@@ -20,7 +20,7 @@ let changed = false;
 // Detecta el scroll de la página para aplicar efectos CSS
 
 window.onload = function (){
-    if(window.pageYOffset === 0){this.navbarlogo(0);}
+    if(window.pageYOffset === 0){navbarlogo(0);}
 };
 
 document.onscroll = function (){
@@ -40,7 +40,6 @@ document.onscroll = function (){
 
 // Lógica de efectos para el título del navbar según la posición del scroll
 function navbarlogo (option){
-    // Mientras se muestre el titulo grande
     if (option === 0){
         document.getElementsByClassName("navIndex")[0].classList.remove('boxshadow');
         document.getElementsByClassName("navbar-brand-section")[0].innerHTML = "";
@@ -48,7 +47,7 @@ function navbarlogo (option){
         document.getElementsByClassName("navbar-collapse")[0].classList.add('centrar');
     } else if (option === 1){
         document.getElementsByClassName("navIndex")[0].classList.add('boxshadow');
-        document.getElementsByClassName("navbar-brand-section")[0].innerHTML = "<a class=\"navbar-brand\" href=\"#\">TEXTILE PANTHEON</a>";
+        document.getElementsByClassName("navbar-brand-section")[0].innerHTML = '<a class=\"navbar-brand\" href=\"#\">TEXTILE PANTHEON</a>';
         document.getElementsByClassName("navbar-brand-section")[0].classList.add('logoentry');
         document.getElementsByClassName("navbar-collapse")[0].classList.remove('centrar');
         document.getElementsByClassName("navbar")[0].classList.add('opacity');

@@ -46,7 +46,7 @@ body{
 
 .navbar-brand{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px;
+    font-size: 15px!important;
 }
 
 .nav-link{
@@ -67,7 +67,7 @@ body{
 }
 
 .centrar{
-    justify-content: center;
+    justify-content: center!important;
 }
 
 @keyframes entrada{
@@ -76,7 +76,7 @@ body{
         opacity: 0;
     }
     to {
-        left: 0px;
+        left: 0;
         opacity: 100;
     }
 }
@@ -86,3 +86,35 @@ body{
     transition: 3s;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+}
+
+.bodyelements{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.element-title{
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.title-section{
+    font-size: 30px;
+    font-family: 'Indie Flower', sans-serif;
+}
+
+.gridinfo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+}

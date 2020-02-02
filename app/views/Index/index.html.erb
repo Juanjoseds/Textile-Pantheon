@@ -8,15 +8,16 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="1671.6">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Alegreya+Sans+SC|Indie+Flower&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="javascript.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Alegreya+Sans+SC|Ubuntu|Quicksand&display=swap" rel="stylesheet">
 
 </head>
 <body>
+
 <!-- LOGO -->
 <div class="title-logo">
   <p>T E X T I L E &nbsp;P A N T H E O N</p>
 </div>
+
 <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light navIndex">
   <section class="navbar-brand-section"></section>
@@ -76,7 +77,54 @@
   </a>
 </div>
 
+<!-- DOC -->
+<%
+  etiqueta = "https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/shop-128.png"
+  seguridad= "https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/locked-128.png"
+  cajas="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/dolly-128.png"
+%>
 
+<div class="bodyelements mt-4">
+  <div class="grid">
+    <div class="element">
+      <img src="<%= etiqueta %>" alt="Etiqueta de precio">
+      <p class="element-title">Los precios más bajos</p>
+      <p class="element-body">Gracias a nuestros fantásticos acuerdos con los proveedores, podemos ofrecerte los mejores productos a precios imbatibles históricos.</p>
+    </div>
+    <div class="element">
+      <img src="<%= cajas %>" alt="transporte de cajas">
+      <p class="element-title">Envío nacionales</p>
+      <p class="element-body">Vayas a donde vayas, siempre podrás contar con nuestros productos. Envíos nacionales incluido Canarias, Ceuta y Melilla.</p>
+    </div>
+    <div class="element">
+      <img src="<%= seguridad %>" alt="Escudo de seguridad">
+      <p class="element-title">Seguridad al cuadrado</p>
+      <p class="element-body">Comprometidos con la seguridad, puesto que es el factor más importante de cara a nuestros clientes. Encriptación y privacidad de los datos asegurada.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="showcase">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('https://blackrockdigital.github.io/startbootstrap-landing-page/img/bg-showcase-1.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga, totam. Ab atque consectetur, esse fugit mollitia nam nisi obcaecati placeat repellat voluptate? A aperiam illo iste iure possimus ratione!</p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('https://blackrockdigital.github.io/startbootstrap-landing-page/img/bg-showcase-3.jpg');"></div>
+      <div class="col-lg-6 my-auto showcase-text">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, fuga, totam. Ab atque consectetur, esse fugit mollitia nam nisi obcaecati placeat repellat voluptate? A aperiam illo iste iure possimus ratione!</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
