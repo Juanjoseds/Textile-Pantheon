@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-
+@import "bootstrap";
 .navbar{
     position: sticky !important;
     transition-duration: 0.5s;
