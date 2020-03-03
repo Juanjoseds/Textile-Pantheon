@@ -39,6 +39,11 @@
 </nav>
 
 <!-- CARROUSEL -->
+<%
+  img1="http://www.theyutopia.com/wp-content/uploads/2014/11/19B5903-2000x300.jpg"
+  img2="https://www.the-espgroup.com/wp-content/uploads/2017/02/delay-repay-image-2000x300.jpg"
+
+%>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -46,10 +51,10 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://www.tellingthetruth.org/images/default-source/pete's-devotional-images/10-2-19-lghero-2000x400.jpg?sfvrsn=c58a7deb_4" class="d-block w-100" alt="...">
+      <img src="<%= img1 %>" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://www.plasticsurgery-sanantonio.com/files/2017/07/Banenr-image-1-2000x400.jpg" class="d-block w-100" alt="...">
+      <img src="<%= img2 %>" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -62,30 +67,36 @@
   </a>
 </div>
 
-<!-- DOC -->
+<div>
+  <p class="services">Bienvenido al paraíso de la creatividad</p>
+</div>
+
 <%
-  etiqueta = "https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/shop-128.png"
-  seguridad= "https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/locked-128.png"
-  cajas="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/dolly-128.png"
+  icon1="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/fashion-128.png"
+  icon2="https://cdn2.iconfinder.com/data/icons/circle-icons-1/64/paintbrush2-128.png"
 %>
 
-<div class="bodyelements mt-4">
-  <div class="grid">
-    <div class="element">
-      <img src="<%= etiqueta %>" alt="Etiqueta de precio">
-      <p class="element-title">Los precios más bajos</p>
-      <p class="element-body">Gracias a nuestros fantásticos acuerdos con los proveedores, podemos ofrecerte los mejores productos a precios imbatibles históricos.</p>
+<div class="container megabox">
+  <div class="row row-cols-2 align-items-center">
+    <div class="col text-center"><img src="<%=icon1%>" alt=""></div>
+    <div class="col col-text">
+      <p>En Textile Pantheon te ofrecemos una amplia gama de ropa, zapatos, accesorios y una gran infinidad de
+      posibilidades para que nunca te falte la creatividad. Un abanico de posibilidades se abren para que
+      puedas conjuntar para tu próximo evento o simplemente, para tu día a día.</p>
     </div>
-    <div class="element">
-      <img src="<%= cajas %>" alt="transporte de cajas">
-      <p class="element-title">Envío nacionales</p>
-      <p class="element-body">Vayas a donde vayas, siempre podrás contar con nuestros productos. Envíos nacionales incluido Canarias, Ceuta y Melilla.</p>
+    <div class="col col-text mt-5">
+      <p>Para tener una tienda online a la altura, tenemos lo último en tendencia, para ofrecerte lo más exclusivo,
+      lo más moderno y por supuesto, lo que no puede faltar en tu armario. Nuestros estilistas solo añaden a nuestra
+      tienda las mejores prendas para que ninguna te decepcione.</p>
     </div>
-    <div class="element">
-      <img src="<%= seguridad %>" alt="Escudo de seguridad">
-      <p class="element-title">Seguridad al cuadrado</p>
-      <p class="element-body">Comprometidos con la seguridad, puesto que es el factor más importante de cara a nuestros clientes. Encriptación y privacidad de los datos asegurada.</p>
-    </div>
+    <div class="col text-center mt-5"><img src="<%=icon2%>" alt=""></div>
+
   </div>
 </div>
+
+<%
+wall="http://getwallpapers.com/wallpaper/full/0/e/2/1248955-cool-spring-wallpaper-1920-x-1080-1920x1080-ios.jpg"
+%>
+
+
 

@@ -14,38 +14,75 @@
  *= require_self
  */
 
-
-
-
-.grid{
-    display: grid;
-    grid-template-columns: 25% 25% 25%;
-    justify-content: center;
+/* Navbar */
+.navbar{
+    position: sticky !important;
+    transition-duration: 0.5s;
+    top: 0;
+    z-index: 1;
 }
 
-.bodyelements{
+body{
+    height: 1500px;
+}
+
+.boxshadow{
+    transition-duration: 0.5s;
+    -webkit-box-shadow: 0px 10px 8px -4px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 10px 8px -4px rgba(0,0,0,0.25);
+    box-shadow: 0px 10px 8px -4px rgba(0,0,0,0.25);
+}
+
+.title-logo{
     text-align: center;
-    font-family: 'Quicksand', sans-serif;
+    margin-top: 1em;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.element-title{
-    font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 0;
+.navbar-brand-section{
+    margin: 0;
+    padding: 0;
 }
 
-.title-section{
-    font-size: 30px;
-    font-family: 'Indie Flower', sans-serif;
+.navbar-brand{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px!important;
 }
 
-.gridinfo{
-    display: grid;
-    grid-template-columns: 50% 50%;
+.nav-link{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 18px;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
 }
 
-.showcase .showcase-img {
-    min-height: 30rem;
-    background-size: cover;
+.navbarlogo{
+    content: "";
+}
+
+.logoentry{
+    position: relative;
+    animation: entrada 2s ease-out;
+    margin-top:5px;
+}
+
+.centrar{
+    justify-content: center!important;
+}
+
+@keyframes entrada{
+    from {
+        left: -50px;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 100;
+    }
+}
+
+.opacity{
+    opacity: 95%;
+    transition: 3s;
 }

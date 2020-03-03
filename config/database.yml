@@ -20,12 +20,14 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: <%= ENV['TEXTILEPANTHEON_DATABASE_USER'] %>
-  password: <%= ENV['TEXTILEPANTHEON_DATABASE_PASSWORD'] %>
+  # Importante ocultar username y password para producción
+  username: postgres
+  password: postgres
+  host: localhost
 
 development:
   <<: *default
-  database: textilepantheon_development
+  database: textilepantheon
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.

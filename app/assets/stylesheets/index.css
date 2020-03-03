@@ -1,71 +1,61 @@
-.navbar{
-    position: sticky !important;
-    transition-duration: 0.5s;
-    top: 0;
-    z-index: 1;
+/*
+ *= require bootstrap/scss/bootstrap
+ *= require_tree .
+ *= require_self
+ */
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
 }
 
-body{
-    height: 1500px;
-}
-
-.boxshadow{
-    transition-duration: 0.5s;
-    -webkit-box-shadow: 0px 10px 8px -4px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 10px 8px -4px rgba(0,0,0,0.25);
-    box-shadow: 0px 10px 8px -4px rgba(0,0,0,0.25);
-}
-
-.title-logo{
+.bodyelements{
     text-align: center;
-    margin-top: 1em;
-    font-size: 20px;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.navbar-brand-section{
-    margin: 0;
-    padding: 0;
+.element-title{
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 0;
 }
 
-.navbar-brand{
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 15px!important;
+.services{
+    color: transparent;
+    background: #666666;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.nav-link{
-    font-family: 'Alegreya Sans SC', sans-serif;
+.megabox{
+    -webkit-box-shadow: 2px 10px 47px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 10px 47px 0px rgba(0,0,0,0.3);
+    box-shadow: 2px 10px 47px 0px rgba(0,0,0,0.3);
+    border: 1px solid #E8E8E8;
+    border-radius: 9px;
+    padding: 2em;
+    transition: 1s;
+}
+
+.megabox:hover{
+    -webkit-box-shadow: 2px 10px 47px 0px rgba(223,217,255,1);
+    -moz-box-shadow: 2px 10px 47px 0px rgba(223,217,255,1);
+    box-shadow: 2px 10px 47px 0px rgba(223,217,255,1);
+    transition: 1s;
+}
+
+.col-text{
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
     font-size: 18px;
-    padding-top: 0!important;
-    padding-bottom: 0!important;
 }
 
-.navbarlogo{
-    content: "";
-}
-
-.logoentry{
-    position: relative;
-    animation: entrada 2s ease-out;
-    margin-top:5px;
-}
-
-.centrar{
-    justify-content: center!important;
-}
-
-@keyframes entrada{
-    from {
-        left: -50px;
-        opacity: 0;
-    }
-    to {
-        left: 0;
-        opacity: 100;
-    }
-}
-
-.opacity{
-    opacity: 95%;
-    transition: 3s;
-}
